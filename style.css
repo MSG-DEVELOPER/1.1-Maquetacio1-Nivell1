@@ -1,0 +1,255 @@
+body {
+    max-width: 1200px;
+    font-size: 24px;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(101, 242, 11, 0.6222864145658263) 100%);
+}
+
+
+
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.up{
+background-color: grey;
+padding: 20px;
+transition: 2s;
+display: flex;
+justify-content: space-between;
+gap: 20px;
+}
+
+.up-element{
+background-color: red;
+padding: 10px;
+width: 15%;
+}
+
+nav{
+    background-color: red;
+    padding: 10px;
+    width: 60%; 
+}
+
+
+
+
+
+.down{
+background-color: green;
+padding: 20px;
+}
+
+.banner{
+    background-color: yellow;
+    padding: 10px;
+}
+
+
+.up:hover {
+    background-color: whitesmoke;
+    transform: scale(1.18);
+}
+
+
+
+
+
+
+
+
+/*PARTE MAIN*/
+main {
+    margin-top: 15px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.izq {
+    background-color: gray;
+    width: 85%;
+    padding: 20px;
+}
+
+.article {
+    background-color: blueviolet;
+    padding: 10px;
+    width: 45%;
+}
+
+.artA {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.navegacion {
+    background-color: rgb(224, 119, 119);
+    padding: 10px;
+    width: 96%;
+    display: flex;
+    margin-left: 2%;
+    margin-top: 1%;
+
+}
+
+
+
+
+
+.der {
+    background-color: red;
+    width: 15%;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.publi1 {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.publi2 {
+    background-color: yellow;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+/*FIN MAIN*/
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.pie {
+    background-color: yellowgreen;
+    padding: 10px;
+}
+
+/*FOOTER/*
+
+
+
+
+
+/*####################################################################################################
+||                                                                                                ||
+||                                          MEDIA QUERY                                           ||
+||                                                                                                ||
+####################################################################################################*/
+
+/*TABLET*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(53, 11, 242, 0.6222864145658263) 100%);
+
+    }
+
+    /*PARTE ALTA*/
+
+    .arriba {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .arribaComun {
+        width: 95%;
+    }
+
+
+    /*PARTE MEDIA*/
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .der {
+        width: 95%;
+        margin-left: 0px;
+
+    }
+
+    .izq {
+        width: 95%;
+    }
+
+}
+
+
+/*MOBILE*/
+
+@media  (max-width:767px) {
+
+    /*en 767 ya cambia*/
+    body {
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+    }
+
+    /*PARTE ALTA*/
+
+    .arriba {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .arribaComun {
+        width: 95%;
+    }
+
+    /*PARTE MEDIA*/
+
+    main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .izq {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .artA {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .article {
+        width: 97%;
+    }
+
+    .der {
+        width: 95%;
+        margin-left: 0px;
+
+    }
+
+}
