@@ -50,9 +50,12 @@ padding: 20px;
     padding: 10px;
 }
 
-
-.up:hover {
-    background-color: whitesmoke;
+.logo{
+    transition: 2s;
+    cursor: pointer;
+}
+.logo:hover {
+    background-color: pink;
     transform: scale(1.18);
 }
 
@@ -163,7 +166,7 @@ footer {
 
 /*TABLET*/
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 991px) {
     body {
         background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(53, 11, 242, 0.6222864145658263) 100%);
 
@@ -205,7 +208,7 @@ footer {
 
 /*MOBILE*/
 
-@media  (max-width:767px) {
+@media  (max-width:600px) {
 
     /*en 767 ya cambia*/
     body {
