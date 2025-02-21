@@ -4,9 +4,7 @@ body {
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(101, 242, 11, 0.6222864145658263) 100%);
 }
 
-
-
-header{
+header {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -14,59 +12,47 @@ header{
     gap: 20px;
 }
 
-
-.up{
-background-color: grey;
-padding: 20px;
-transition: 2s;
-display: flex;
-justify-content: space-between;
-gap: 20px;
+.header-up {
+    background-color: grey;
+    padding: 20px;
+    transition: 2s;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.up-element{
-background-color: red;
-padding: 10px;
-width: 15%;
-}
-
-nav{
+.header-up-element {
     background-color: red;
     padding: 10px;
-    width: 60%; 
+    width: 15%;
 }
 
-
-
-
-
-.down{
-background-color: green;
-padding: 20px;
+nav {
+    background-color: red;
+    padding: 10px;
+    width: 60%;
 }
 
-.banner{
+.header-down {
+    background-color: green;
+    padding: 20px;
+}
+
+.banner {
     background-color: yellow;
     padding: 10px;
 }
 
-.logo{
+.header-logo {
     transition: 2s;
     cursor: pointer;
 }
-.logo:hover {
+
+.header-logo:hover {
     background-color: pink;
     transform: scale(1.18);
 }
 
-
-
-
-
-
-
-
-/*PARTE MAIN*/
 main {
     margin-top: 15px;
     background-color: black;
@@ -75,7 +61,7 @@ main {
     padding: 20px;
 }
 
-.izq {
+.main-left {
     background-color: gray;
     width: 85%;
     padding: 20px;
@@ -87,7 +73,7 @@ main {
     width: 45%;
 }
 
-.artA {
+.block-art {
     display: flex;
     width: 100%;
     padding: 10px;
@@ -103,156 +89,112 @@ main {
     display: flex;
     margin-left: 2%;
     margin-top: 1%;
-
 }
 
-
-
-
-
-.der {
+.main-rigth {
     background-color: red;
     width: 15%;
     margin-left: 30px;
     padding: 20px;
 }
 
-.publi1 {
+.adv1 {
     background-color: yellow;
     padding: 10px;
 }
 
-.publi2 {
+.adv2 {
     background-color: yellow;
     padding: 10px;
     margin-top: 10px;
 }
 
-
-/*FIN MAIN*/
-
-
-
-
-
-
-
-
-
-
-/*FOOTER*/
 footer {
     background-color: black;
     margin-top: 15px;
     padding: 20px;
 }
 
-.pie {
+.footer-element {
     background-color: yellowgreen;
     padding: 10px;
 }
 
-/*FOOTER/*
 
 
+@media (min-width: 601px) and (max-width: 991px) {
 
-
-
-/*####################################################################################################
-||                                                                                                ||
-||                                          MEDIA QUERY                                           ||
-||                                                                                                ||
-####################################################################################################*/
-
-/*TABLET*/
-
-@media (min-width: 600px) and (max-width: 991px) {
     body {
         background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(53, 11, 242, 0.6222864145658263) 100%);
-
     }
-
-    /*PARTE ALTA*/
-
-    .arriba {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .arribaComun {
-        width: 95%;
-    }
-
-
-    /*PARTE MEDIA*/
 
     main {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 20px;
-
+        padding: 30px;
     }
 
-    .der {
+    .only-articles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-left {
+        width: 95%;
+    }
+
+    .main-rigth {
         width: 95%;
         margin-left: 0px;
-
     }
 
-    .izq {
-        width: 95%;
+    .navegacion {
+        margin: 0px;
+        margin-top: 1rem;
     }
-
 }
 
 
-/*MOBILE*/
+@media (max-width:600px) {
 
-@media  (max-width:600px) {
-
-    /*en 767 ya cambia*/
     body {
         background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(0, 0, 0, 1) 100%);
-
     }
-
-    /*PARTE ALTA*/
-
-    .arriba {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .arribaComun {
-        width: 95%;
-    }
-
-    /*PARTE MEDIA*/
 
     main {
         flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
 
-    .izq {
+    .main-left {
         display: flex;
         flex-direction: column;
-        width: 95%;
+        width: 92%;
     }
 
-    .artA {
+    .block-art {
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+        margin-left: 0px;
     }
 
     .article {
-        width: 97%;
+        width: 100%;
+        margin-left: -20px;
     }
 
-    .der {
-        width: 95%;
+    .navegacion {
+        margin-left: -0.5rem;
+        width: 98%;
+    }
+
+    .main-rigth {
+        width: 91%;
         margin-left: 0px;
-
     }
-
 }
